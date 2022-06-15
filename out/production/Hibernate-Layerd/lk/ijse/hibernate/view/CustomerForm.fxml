@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="385.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.CustomerFormController">
+    <children>
+        <Label layoutX="203.0" layoutY="14.0" text="Customer Form" textFill="WHITE">
+            <font>
+                <Font name="Ubuntu Bold Italic" size="31.0" />
+            </font>
+        </Label>
+        <Separator layoutX="14.0" layoutY="53.0" prefHeight="6.0" prefWidth="620.0" />
+        <JFXTextField fx:id="txtId" focusColor="WHITE" labelFloat="true" layoutX="53.0" layoutY="71.0" prefHeight="26.0" prefWidth="214.0" promptText="Customer ID" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtName" focusColor="WHITE" labelFloat="true" layoutX="353.0" layoutY="71.0" prefHeight="26.0" prefWidth="214.0" promptText="Name" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtAddress" focusColor="WHITE" labelFloat="true" layoutX="53.0" layoutY="119.0" prefHeight="26.0" prefWidth="214.0" promptText="Address" unFocusColor="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="16.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton buttonType="RAISED" layoutX="194.0" layoutY="167.0" onAction="#btnSaveOnAction" prefHeight="31.0" prefWidth="318.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 50;" text="SAVE" textFill="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="522.0" layoutY="167.0" onAction="#btnUpdateOnAction" prefHeight="31.0" prefWidth="90.0" style="-fx-background-color: #e74c3c; -fx-background-radius: 50;" text="UPDATE" textFill="WHITE">
+            <font>
+                <Font name="Ubuntu Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+    </children>
+</AnchorPane>
